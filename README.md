@@ -1,7 +1,7 @@
 # Unicorn #
 
 My zsh theme featuring emojis of some of my favorite things and more inspired by [wild cherry](https://github.com/mashaal/wild-cherry) which I use on top of [Dracula](https://github.com/dracula/dracula-theme) for iTerm.
-![Unicorn](images/unicorn.gif)
+![Unicorn](https://raw.githubusercontent.com/juliuscaesar/unicorn/99755ffad7349ae614bcd3af79d82d39aa6dcbfe/images/unicorn.gif)
 
 ## Git Emoji key ##
 🍕 dirty
