@@ -20,7 +20,7 @@ if [ ! -n "${UNICORN_STATUS_BG+1}" ]; then
   UNICORN_STATUS_BG=green
 fi
 if [ ! -n "${UNICORN_STATUS_ERROR_BG+1}" ]; then
-  UNICORN_STATUS_ERROR_BG=black
+  UNICORN_STATUS_ERROR_BG=red
 fi
 if [ ! -n "${UNICORN_STATUS_FG+1}" ]; then
   UNICORN_STATUS_FG=white
@@ -369,8 +369,8 @@ prompt_status() {
 
   local symbols
   symbols=()
-  [[ $RETVAL -ne 0 && $UNICORN_STATUS_EXIT_SHOW != true ]] && symbols+="💥 "
-  [[ $RETVAL -ne 0 && $UNICORN_STATUS_EXIT_SHOW == true ]] && symbols+="💥 $RETVAL"
+  [[ $RETVAL -ne 0 && $UNICORN_STATUS_EXIT_SHOW != true ]] && symbols+="🙀 💣 😱 "
+  [[ $RETVAL -ne 0 && $UNICORN_STATUS_EXIT_SHOW == true ]] && symbols+="🙀 💣 😱 $RETVAL"
   [[ $UID -eq 0 ]] && symbols+="%{%F{yellow}%}⚡%f"
   [[ $(jobs -l | wc -l) -gt 0 ]] && symbols+="⚙"
 
