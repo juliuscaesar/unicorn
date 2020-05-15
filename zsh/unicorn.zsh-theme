@@ -302,7 +302,7 @@ prompt_dir() {
     return
   fi
 
-  local dir='🍣  '
+  local dir='✨  '
   local _context="$(context)"
   [[ $UNICORN_DIR_CONTEXT_SHOW == true && -n "$_context" ]] && dir="${dir}${_context}:"
   [[ $UNICORN_DIR_EXTENDED == true ]] && dir="${dir}%4(c:...:)%3c" || dir="${dir}%1~"
