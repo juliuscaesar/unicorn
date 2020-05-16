@@ -387,7 +387,7 @@ prompt_char() {
   local bt_prompt_char
 
   if [[ ${#UNICORN_PROMPT_CHAR} -eq 1 ]] then
-    bt_prompt_char="👉 "
+    bt_prompt_char=" 👉 "
   fi
 
   if [[ $UNICORN_PROMPT_ROOT == true ]] then
