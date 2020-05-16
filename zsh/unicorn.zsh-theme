@@ -355,7 +355,7 @@ prompt_time() {
     return
   fi
 
-  prompt_segment $UNICORN_TIME_BG $UNICORN_TIME_FG '🦄  ✨  %D{%H:%M:%S}'
+  prompt_segment $UNICORN_TIME_BG $UNICORN_TIME_FG '🦄  ✨ %D{%H:%M:%S}'
 }
 
 # Status:
