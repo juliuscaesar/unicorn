@@ -143,47 +143,47 @@ else
   ZSH_THEME_GIT_PROMPT_CLEAN=$UNICORN_GIT_CLEAN
 fi
 if [ ! -n "${UNICORN_GIT_ADDED+1}" ]; then
-  ZSH_THEME_GIT_PROMPT_ADDED=" 🐣"
+  ZSH_THEME_GIT_PROMPT_ADDED=" 🐣 "
 else
   ZSH_THEME_GIT_PROMPT_ADDED=$UNICORN_GIT_ADDED
 fi
 if [ ! -n "${UNICORN_GIT_MODIFIED+1}" ]; then
-  ZSH_THEME_GIT_PROMPT_MODIFIED=" ✏️"
+  ZSH_THEME_GIT_PROMPT_MODIFIED=" ✏️ "
 else
   ZSH_THEME_GIT_PROMPT_MODIFIED=$UNICORN_GIT_MODIFIED
 fi
 if [ ! -n "${UNICORN_GIT_DELETED+1}" ]; then
-  ZSH_THEME_GIT_PROMPT_DELETED=" 💀"
+  ZSH_THEME_GIT_PROMPT_DELETED=" 💀 "
 else
   ZSH_THEME_GIT_PROMPT_DELETED=$UNICORN_GIT_DELETED
 fi
 if [ ! -n "${UNICORN_GIT_UNTRACKED+1}" ]; then
-  ZSH_THEME_GIT_PROMPT_UNTRACKED=" 👻"
+  ZSH_THEME_GIT_PROMPT_UNTRACKED=" 👻 "
 else
   ZSH_THEME_GIT_PROMPT_UNTRACKED=$UNICORN_GIT_UNTRACKED
 fi
 if [ ! -n "${UNICORN_GIT_RENAMED+1}" ]; then
-  ZSH_THEME_GIT_PROMPT_RENAMED=" 🤖"
+  ZSH_THEME_GIT_PROMPT_RENAMED=" 🤖 "
 else
   ZSH_THEME_GIT_PROMPT_RENAMED=$UNICORN_GIT_RENAMED
 fi
 if [ ! -n "${UNICORN_GIT_UNMERGED+1}" ]; then
-  ZSH_THEME_GIT_PROMPT_UNMERGED=" ⛄️"
+  ZSH_THEME_GIT_PROMPT_UNMERGED=" ⛄️ "
 else
   ZSH_THEME_GIT_PROMPT_UNMERGED=$UNICORN_GIT_UNMERGED
 fi
 if [ ! -n "${UNICORN_GIT_AHEAD+1}" ]; then
-  ZSH_THEME_GIT_PROMPT_AHEAD=" ☀️"
+  ZSH_THEME_GIT_PROMPT_AHEAD=" ☀️ "
 else
   ZSH_THEME_GIT_PROMPT_AHEAD=$UNICORN_GIT_AHEAD
 fi
 if [ ! -n "${UNICORN_GIT_BEHIND+1}" ]; then
-  ZSH_THEME_GIT_PROMPT_BEHIND=" 🌩"
+  ZSH_THEME_GIT_PROMPT_BEHIND=" 🌩 "
 else
   ZSH_THEME_GIT_PROMPT_BEHIND=$UNICORN_GIT_BEHIND
 fi
 if [ ! -n "${UNICORN_GIT_DIVERGED+1}" ]; then
-  ZSH_THEME_GIT_PROMPT_DIVERGED=" ✈️"
+  ZSH_THEME_GIT_PROMPT_DIVERGED=" ✈️ "
 else
   ZSH_THEME_GIT_PROMPT_DIVERGED=$UNICORN_GIT_PROMPT_DIVERGED
 fi
@@ -369,8 +369,8 @@ prompt_status() {
 
   local symbols
   symbols=()
-  [[ $RETVAL -ne 0 && $UNICORN_STATUS_EXIT_SHOW != true ]] && symbols+="🙀 💣 😱 "
-  [[ $RETVAL -ne 0 && $UNICORN_STATUS_EXIT_SHOW == true ]] && symbols+="🙀 💣 😱 $RETVAL"
+  [[ $RETVAL -ne 0 && $UNICORN_STATUS_EXIT_SHOW != true ]] && symbols+="💣 "
+  [[ $RETVAL -ne 0 && $UNICORN_STATUS_EXIT_SHOW == true ]] && symbols+="💣 $RETVAL"
   [[ $UID -eq 0 ]] && symbols+="%{%F{yellow}%}⚡%f"
   [[ $(jobs -l | wc -l) -gt 0 ]] && symbols+="⚙"
 
