@@ -1,6 +1,6 @@
 # Unicorn #
 
-My zsh theme featuring emojis of some of my favorite things and more inspired by [wild cherry](https://github.com/mashaal/wild-cherry) which I use with a very slightly modified [Dracula iTerm theme](https://draculatheme.com/iterm/).
+My zsh theme inspired by [wild cherry](https://github.com/mashaal/wild-cherry) which I use with a very slightly modified [Dracula iTerm theme](https://draculatheme.com/iterm/).
 
 ![Unicorn](https://github.com/juliuscaesar/unicorn/blob/master/images/unicorn.png)
 
